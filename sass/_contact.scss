@@ -6,11 +6,11 @@
     text-align: center;
 
     &__box {
-        width: 58%;
+        width: 60%;
         // background-color: red;
         color: $color-main;
         margin-top: 3rem;
-    
+            
         & * {
             line-height: 130%;
             font-size: 2rem;
@@ -25,7 +25,8 @@
 
         &--info {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            margin-left: 6rem;
         }
 
         &--map {

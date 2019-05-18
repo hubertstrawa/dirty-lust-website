@@ -1,4 +1,21 @@
 .footer {
     grid-column: full-start / full-end;
     background-color: $color-head-foot;
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+    align-content: center;
+
+    &__logo {
+        grid-column: center-start / col-start 1;
+        width: 10.3rem;
+        margin-left: -3rem;
+    }
+
+    &__socials {
+        grid-column: col-start 8 / col-end 8;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 5rem;
+        // background-color: aqua;
+    }
 }
