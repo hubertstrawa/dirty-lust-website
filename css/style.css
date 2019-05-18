@@ -144,4 +144,6 @@ body {
     grid-column: col-start 8 / col-end 8;
     display: flex;
     justify-content: space-around;
-    margin-left: 5rem; }
+    margin-left: 8rem; }
+    .footer__socials--ig {
+      margin-right: 4rem; }
