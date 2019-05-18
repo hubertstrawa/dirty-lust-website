@@ -1,0 +1,39 @@
+.contact {
+    grid-column: full-start / full-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__box {
+        width: 58%;
+        // background-color: red;
+        color: $color-main;
+        margin-top: 3rem;
+    
+        & * {
+            line-height: 130%;
+            font-size: 2rem;
+        }
+
+        &--header {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 3.9rem;
+            margin-bottom: 4rem;
+        }
+
+        &--info {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &--map {
+            margin-top: 4rem;
+        }
+
+        .first-line {
+            font-size: 1.6rem;
+        }
+    }
+}

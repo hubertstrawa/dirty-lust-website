@@ -15,7 +15,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
-  grid-template-rows: 9rem 40rem 39rem 108rem 54rem 6.4rem; }
+  grid-template-rows: 9rem 40rem 39rem min-content 54rem 6.4rem; }
 
 .header {
   grid-column: full-start / full-end;
@@ -82,7 +82,53 @@ body {
 
 .gallery__container {
   display: grid;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
+  margin-bottom: 8rem; }
 
 .gallery__photos {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-flow: row wrap;
+  padding: .5vw; }
+
+.gallery__photos > div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 280px;
+  margin: .5vw; }
+
+.gallery__photos > div img {
+  width: 100%;
+  height: auto;
+  padding: .3vw; }
+
+.contact {
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .contact__box {
+    width: 58%;
+    color: #B49960;
+    margin-top: 3rem; }
+    .contact__box * {
+      line-height: 130%;
+      font-size: 2rem; }
+    .contact__box--header {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 3.9rem;
+      margin-bottom: 4rem; }
+    .contact__box--info {
+      display: flex;
+      justify-content: space-around; }
+    .contact__box--map {
+      margin-top: 4rem; }
+    .contact__box .first-line {
+      font-size: 1.6rem; }
+
+.footer {
+  grid-column: full-start / full-end;
+  background-color: #1E1E1E; }

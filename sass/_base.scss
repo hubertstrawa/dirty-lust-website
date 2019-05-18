@@ -29,5 +29,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
-    grid-template-rows: 9rem 40rem 39rem 108rem 54rem 6.4rem;
+    grid-template-rows: 9rem 40rem 39rem min-content 54rem 6.4rem;
 }
+
+// 108 rem -mincontent
