@@ -1,0 +1,44 @@
+.header {
+    grid-column: full-start / full-end;
+    background: $color-head-foot;
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14.5rem) [col-end]) [center-end] 1fr [full-end];
+    align-items: center;
+
+    &__logo {
+        grid-column: center-start / col-start 1;
+    }
+
+    &__nav {
+        grid-column: col-start 6 / full-end;
+        margin: 0 auto 0 5.5rem;
+
+        & > ul {
+        display: flex;
+        list-style: none;
+        color: $color-main;
+        }
+
+        & > ul > li {
+            margin-right: 4rem;
+            font-weight: 500;
+        }
+
+        & > ul * {
+            color: $color-main;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+
+
+.hero {
+    grid-column: full-start / full-end;
+
+    &__img {
+        width: 100%;
+    }
+}

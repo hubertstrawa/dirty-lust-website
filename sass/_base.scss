@@ -1,0 +1,33 @@
+// VARIABLES
+
+$color-head-foot: #1E1E1E;
+$color-main: #B49960;
+$color-main-opacity: rgba(#B49960, 0.05);
+
+
+// GLOBAL SETTINGS
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1 rem = 10px
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+    grid-template-rows: 9rem 40rem 39rem 108rem 54rem 6.4rem;
+}

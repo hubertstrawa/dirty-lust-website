@@ -1,0 +1,30 @@
+.about {
+    grid-column: full-start / full-end;
+    height: 100%;
+    // background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-main;
+
+    & > div {
+        width: 53.5%;
+        text-align: center;
+        margin-top: .1rem;
+    }
+
+    &__header {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.9rem;
+        margin-bottom: 2.7rem;
+    }
+
+    &__text {
+        color: rgba(180, 153, 96, 0.77);
+        font-size: 2.2rem;
+        line-height: 130%;
+        font-weight: 400;
+    }
+}

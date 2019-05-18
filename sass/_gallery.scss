@@ -1,0 +1,26 @@
+.gallery {
+    grid-column: full-start / full-end;
+    background-color: $color-main-opacity;
+
+    &__header {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.9rem;
+        color: $color-main;
+        padding-top: 9.2rem;
+        text-align: center;
+        margin-bottom: 6.8rem;
+    }
+}
+
+.gallery__container {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+}
+
+.gallery__photos {
+    grid-column: center-start / center-end;
+}
+
+.firstimg {
+}
