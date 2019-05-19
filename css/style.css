@@ -342,7 +342,7 @@ body {
       width: 65vw; } }
   @media only screen and (max-width: 37.5em) {
     .gmap_canvas {
-      width: 96vw; } }
+      width: 98vw; } }
 
 .footer {
   grid-column: full-start / full-end;
@@ -360,7 +360,8 @@ body {
   .footer__socials {
     grid-column: col-start 8 / col-end 8;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding-top: .4rem; }
     @media only screen and (max-width: 75em) {
       .footer__socials {
         margin: 0;
