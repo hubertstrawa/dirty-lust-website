@@ -29,11 +29,15 @@
             @media only screen and (max-width: $bp-largest){
                 margin-left: 1rem;
             }
+
+            @media only screen and (max-width: $bp-small){
+                margin-left: 0;
+            }
         }
 
         &--fb {
             @media only screen and (max-width: $bp-large){
-                margin-right: 7%;
+                margin-right: 20%;
             }
         }
     }
