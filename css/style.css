@@ -159,7 +159,7 @@ body {
     max-height: 100vh;
     opacity: 0;
     transition: opacity 0.4s ease;
-    margin-top: -14rem; }
+    margin-top: -10rem; }
     .menu-wrap .menu > div > div > ul > li {
       list-style: none;
       color: #B49960;
@@ -190,7 +190,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .about > div {
         width: 75%;
-        margin-top: -5rem; } }
+        margin-top: -10rem; } }
   .about__header {
     font-size: 3.2rem;
     font-weight: 700;
@@ -239,7 +239,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .gallery__photos > div img {
       width: 90%;
-      margin: 0 8% 0 5%; } }
+      margin: 0 5% 0 5%; } }
 
 .contact {
   grid-column: full-start / full-end;
