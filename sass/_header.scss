@@ -13,8 +13,12 @@
     &__logo {
         grid-column: center-start / col-start 1;
 
-        @media only screen and (max-width: $bp-small){
+        @media only screen and (max-width: $bp-largest){
             padding-left: 20%;
+            width: 99%;
+        }
+
+        @media only screen and (max-width: $bp-medium){
             width: 30vw;
         }
 
@@ -54,9 +58,15 @@
 
 .hero {
     grid-column: full-start / full-end;
+    position: relative;
 
     &__img {
         width: 100%;
+
+        @media only screen and (max-width: $bp-medium){
+            clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+            opacity: .7;
+        }
     }
 }
 
@@ -67,11 +77,23 @@
 .menu-wrap {
     position: fixed;
     top: 10px;
-    right: 17%;
+    right: 7vw;
     z-index: 1;
 
     @media only screen and (min-width: $bp-largest){
         display: none;
+    }
+
+    @media only screen and (max-width: $bp-large){
+        right: 9vw;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        right: 11vw;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        right: 19vw;
     }
 
     .toggler {
@@ -153,7 +175,7 @@
         transition-duration: $menu-speed;
 
         & > div {
-            opacity: 1;
+            opacity: .8;
             transition: opacity 0.4s ease;
         }
     }
@@ -172,7 +194,7 @@
     justify-content: center;
 
     & > div {
-        background: rgba($color-head-foot, .9);
+        background: rgba(#000, .95);
         border-radius: 50%;
         width: 300vw;
         height: 300vw;

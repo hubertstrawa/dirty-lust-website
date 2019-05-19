@@ -11,6 +11,7 @@ $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; // 600px
+$bp-smallest: 23.43em;
 
 // GLOBAL SETTINGS
 
@@ -27,6 +28,18 @@ html {
     font-size: 62.5%; // 1 rem = 10px
     box-sizing: border-box;
 
+    @media only screen and (max-width: $bp-largest){
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 58%;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        font-size: 54%;
+    }
+
     @media only screen and (max-width: $bp-small){
         font-size: 52%;
     }
@@ -40,11 +53,15 @@ body {
 .container {
     display: grid;
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
-    grid-template-rows: 9rem min-content 40rem min-content 54rem 6.4rem;
+    grid-template-rows: 9rem min-content 40rem min-content min-content 6.4rem;
 
     @media only screen and (max-width: $bp-small){
-        grid-template-rows: 9rem min-content 39rem min-content 54rem 6.4rem;
+        grid-template-rows: 9rem min-content 39rem min-content min-content 6.4rem;
     }
 }
+
+.mb-small { margin-bottom: 2rem; }
+.mb-medium { margin-bottom: 4rem; }
+
 
 // 108 rem -mincontent

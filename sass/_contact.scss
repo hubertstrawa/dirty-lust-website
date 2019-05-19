@@ -15,6 +15,11 @@
         & * {
             line-height: 130%;
             font-size: 2rem;
+
+            @media only screen and (min-width: $bp-large){
+            line-height: 150%;
+            font-size: 1.7rem;
+            }
         }
 
         &--header {
@@ -29,7 +34,7 @@
             justify-content: space-evenly;
             margin-left: 6rem;
 
-            @media only screen and (max-width: $bp-small){
+            @media only screen and (max-width: $bp-large){
                 flex-direction: column;
                 margin: auto;
             }
@@ -42,5 +47,48 @@
         .first-line {
             font-size: 1.6rem;
         }
+    }
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center !important;
+    margin-left: 6vw;
+
+    @media only screen and (max-width: $bp-small){
+        margin: 0;
+    }
+    // margin-bottom: 5rem;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:210px;
+    width:771px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:210px;
+    width:700px;
+
+    @media only screen and (max-width: $bp-large){
+        width: 600px;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        width: 600px;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        width: 600px;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        width: 375px;
     }
 }
