@@ -53,10 +53,10 @@ body {
     @media only screen and (max-width: 75em) {
       .header__logo {
         padding-left: 20%;
-        width: 99%; } }
+        width: 90%; } }
     @media only screen and (max-width: 50em) {
       .header__logo {
-        width: 30vw; } }
+        width: 22vw; } }
   .header__nav {
     grid-column: col-start 6 / full-end;
     margin: 0 auto 0 5.5rem; }
@@ -101,7 +101,7 @@ body {
       right: 11vw; } }
   @media only screen and (max-width: 37.5em) {
     .menu-wrap {
-      right: 19vw; } }
+      right: 17vw; } }
   .menu-wrap .toggler {
     position: absolute;
     top: 0;
