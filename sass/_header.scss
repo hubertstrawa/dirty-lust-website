@@ -42,12 +42,63 @@
         & > ul > li {
             margin-right: 4rem;
             font-weight: 500;
+
+            & > img {
+                &:hover {
+                    opacity: .5;
+                }
+            }
+
+            & > a {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    background: rgba($color-main, .9);
+                    position: absolute;
+                    top: -1rem;
+                    left: 0;
+                    right: 0;
+                    transform: scale(0, 1);
+                    transition: transform ease-in-out 250ms;
+                }
+    
+                &:hover::before {
+                    transform: scale(1,1);
+                }
+            }
         }
 
         & > ul * {
             color: $color-main;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        & > a {
+
+            &:hover {
+                color: #000;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                height: 2px;
+                background: black;
+                position: absolute;
+                top: -1rem;
+                left: 0;
+                right: 0;
+                transform: scale(0, 1);
+                transition: transform ease-in-out 250ms;
+            }
+
+            &:hover::before {
+                transform: scale(1,1);
+            }
         }
 
         @media only screen and (max-width: $bp-largest){

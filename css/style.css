@@ -71,10 +71,42 @@ body {
     .header__nav > ul > li {
       margin-right: 4rem;
       font-weight: 500; }
+      .header__nav > ul > li > img:hover {
+        opacity: .5; }
+      .header__nav > ul > li > a {
+        position: relative; }
+        .header__nav > ul > li > a::before {
+          content: '';
+          display: block;
+          height: 2px;
+          background: rgba(180, 153, 96, 0.9);
+          position: absolute;
+          top: -1rem;
+          left: 0;
+          right: 0;
+          transform: scale(0, 1);
+          transition: transform ease-in-out 250ms; }
+        .header__nav > ul > li > a:hover::before {
+          transform: scale(1, 1); }
     .header__nav > ul * {
       color: #B49960;
       text-decoration: none;
       cursor: pointer; }
+    .header__nav > a:hover {
+      color: #000; }
+    .header__nav > a::before {
+      content: '';
+      display: block;
+      height: 2px;
+      background: black;
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      right: 0;
+      transform: scale(0, 1);
+      transition: transform ease-in-out 250ms; }
+    .header__nav > a:hover::before {
+      transform: scale(1, 1); }
     @media only screen and (max-width: 75em) {
       .header__nav {
         display: none; } }
@@ -375,3 +407,5 @@ body {
     @media only screen and (max-width: 62.5em) {
       .footer__socials--fb {
         margin-right: 50%; } }
+  .footer .footer__socials > a > img:hover {
+    opacity: .5; }
