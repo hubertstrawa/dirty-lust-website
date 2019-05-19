@@ -175,7 +175,7 @@ body {
   align-items: center;
   justify-content: center; }
   .menu-wrap .menu > div {
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.9);
     border-radius: 50%;
     width: 300vw;
     height: 300vw;
