@@ -15,7 +15,7 @@
 
         @media only screen and (max-width: $bp-small){
             padding-left: 20%;
-            width: 130px
+            width: 30vw;
         }
 
     }
@@ -67,7 +67,7 @@
 .menu-wrap {
     position: fixed;
     top: 10px;
-    left: 80%;
+    right: 17%;
     z-index: 1;
 
     @media only screen and (min-width: $bp-largest){
@@ -190,7 +190,7 @@
         max-height: 100vh;
         opacity: 0;
         transition: opacity 0.4s ease;
-        margin-top: -10rem;
+        margin-top: -11rem;
 
         & > ul > li {
             list-style: none;

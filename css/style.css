@@ -18,10 +18,10 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
-  grid-template-rows: 9rem 40rem 39rem min-content 54rem 6.4rem; }
+  grid-template-rows: 9rem min-content 40rem min-content 54rem 6.4rem; }
   @media only screen and (max-width: 37.5em) {
     .container {
-      grid-template-rows: 9rem 25rem 39rem min-content 54rem 6.4rem; } }
+      grid-template-rows: 9rem min-content 39rem min-content 54rem 6.4rem; } }
 
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
@@ -38,7 +38,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__logo {
         padding-left: 20%;
-        width: 130px; } }
+        width: 30vw; } }
   .header__nav {
     grid-column: col-start 6 / full-end;
     margin: 0 auto 0 5.5rem; }
@@ -65,7 +65,7 @@ body {
 .menu-wrap {
   position: fixed;
   top: 10px;
-  left: 80%;
+  right: 17%;
   z-index: 1; }
   @media only screen and (min-width: 75em) {
     .menu-wrap {
@@ -159,7 +159,7 @@ body {
     max-height: 100vh;
     opacity: 0;
     transition: opacity 0.4s ease;
-    margin-top: -10rem; }
+    margin-top: -11rem; }
     .menu-wrap .menu > div > div > ul > li {
       list-style: none;
       color: #B49960;
