@@ -64,8 +64,7 @@
         width: 100%;
 
         @media only screen and (max-width: $bp-medium){
-            clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-            opacity: .7;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
         }
     }
 }
