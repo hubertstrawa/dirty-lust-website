@@ -59,7 +59,7 @@ body {
         width: 22vw; } }
     @media only screen and (max-width: 37.5em) {
       .header__logo {
-        width: 25vw;
+        width: 27vw;
         padding-left: 23%; } }
   .header__nav {
     grid-column: col-start 6 / full-end;
@@ -374,7 +374,7 @@ body {
       width: 65vw; } }
   @media only screen and (max-width: 37.5em) {
     .gmap_canvas {
-      width: 98vw; } }
+      width: 96.5vw; } }
 
 .footer {
   grid-column: full-start / full-end;
