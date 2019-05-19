@@ -57,6 +57,10 @@ body {
     @media only screen and (max-width: 50em) {
       .header__logo {
         width: 22vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        width: 25vw;
+        padding-left: 23%; } }
   .header__nav {
     grid-column: col-start 6 / full-end;
     margin: 0 auto 0 5.5rem; }
@@ -174,7 +178,7 @@ body {
   align-items: center;
   justify-content: center; }
   .menu-wrap .menu > div {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     border-radius: 50%;
     width: 300vw;
     height: 300vw;
@@ -190,12 +194,12 @@ body {
     max-height: 100vh;
     opacity: 0;
     transition: opacity 0.4s ease;
-    margin-top: -11rem; }
+    margin-top: -5rem; }
     .menu-wrap .menu > div > div > ul > li {
       list-style: none;
       color: #B49960;
-      font-size: 2rem;
-      padding: 2rem;
+      font-size: 2.5rem;
+      padding: 2.4rem;
       font-weight: 600; }
       .menu-wrap .menu > div > div > ul > li > a {
         color: inherit;
@@ -270,7 +274,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .gallery__photos > div img {
       width: 90%;
-      margin: 0 5% 0 5%;
+      margin: 0 5% 3% 5%;
       padding: 0; } }
 
 .contact {
@@ -338,7 +342,7 @@ body {
       width: 65vw; } }
   @media only screen and (max-width: 37.5em) {
     .gmap_canvas {
-      width: 99vw; } }
+      width: 96vw; } }
 
 .footer {
   grid-column: full-start / full-end;
@@ -356,11 +360,11 @@ body {
   .footer__socials {
     grid-column: col-start 8 / col-end 8;
     display: flex;
-    justify-content: space-around;
-    margin-left: 8rem; }
+    justify-content: space-around; }
     @media only screen and (max-width: 75em) {
       .footer__socials {
-        margin: 0; } }
+        margin: 0;
+        padding-right: 2rem; } }
     @media only screen and (max-width: 75em) {
       .footer__socials--ig {
         margin-left: 1rem; } }
@@ -369,4 +373,4 @@ body {
         margin-left: 0; } }
     @media only screen and (max-width: 62.5em) {
       .footer__socials--fb {
-        margin-right: 20%; } }
+        margin-right: 50%; } }

@@ -19,10 +19,10 @@
         grid-column: col-start 8 / col-end 8;
         display: flex;
         justify-content: space-around;
-        margin-left: 8rem;
 
         @media only screen and (max-width: $bp-largest){
             margin: 0;
+            padding-right: 2rem;
         }
 
         &--ig {
@@ -37,7 +37,7 @@
 
         &--fb {
             @media only screen and (max-width: $bp-large){
-                margin-right: 20%;
+                margin-right: 50%;
             }
         }
     }
