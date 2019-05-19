@@ -15,27 +15,49 @@
             <img class="header__logo" src="img/logo.svg">
             <nav class="header__nav">
                 <ul>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#o_nas">O nas</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
                     <li><img src="img/ig.svg" alt=""></li>
                     <li><img src="img/fb.svg" alt=""></li>
                 </ul>
             </nav>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#o_nas" class="ham-about">O nas</a></li>
+                                <li><a href="#galeria" class="ham-gallery">Galeria</a></li>
+                                <li><a href="#kontakt" class="ham-contact">Kontakt</a></li>
+                                <li>
+                                    <div class="ham-socials">
+                                        <a href="https://www.instagram.com/dirtylusttattoo/" target="_blank"><img src="img/ig.svg" alt=""></a>
+                                        <a href="https://www.facebook.com/DirtyLustStudio/" target="_blank"><img src="img/fb.svg" alt=""></a>
+                                    </div>
+                                </li>
+                                <!-- <li><img src="img/fb.svg" alt=""></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </header>   
     
     <section class="hero">
         <img class="hero__img" src="img/hero.svg">
     </section>
     
-    <section class="about">
+    <section class="about" id="o_nas">
         <div>
             <h1 class="about__header">O Nas</h1>
             <p class="about__text">Dirty Lust studio z wieloletnią tradycją, w centrum Warszawy. Staramy się ugościć wszystkich klientów profesjonalnym podejściem w dziedzinie tatuażu, a także domową atmosfera</p>
         </div>
     </section>
     
-    <section class="gallery">
+    <section class="gallery" id="galeria">
         <h1 class="gallery__header">Galeria</h1>
         <div class="gallery__container">
             <div class="gallery__photos">
@@ -55,7 +77,7 @@
         </div>
     </section>
     
-    <section class="contact">
+    <section class="contact" id="kontakt">
         <div class="contact__box">
             <h1 class="contact__box--header">Kontakt</h1>
             <div class="contact__box--info">
@@ -73,7 +95,8 @@
                     <p>00-026 Warszawa</p>
                 </div>
             </div>
-            <img class="contact__box--map" src="img/map.jpg">
+            <!-- <img class="contact__box--map" src="img/map.jpg"> -->
+            <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="771" height="210" id="gmap_canvas" src="https://maps.google.com/maps?q=Warszawa%2C%20Raszy%C5%84ska%203&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:210px;width:771px;}.gmap_canvas {overflow:hidden;background:none!important;height:210px;width:771px;}</style></div> -->
         </div>
     </section>
     
@@ -86,6 +109,18 @@
     </footer>
 
 </main>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 850,
+                offset: -30,
+            });   
 
+            var scroll = new SmoothScroll('a[href*="#galeria"]', {
+	            speed: 850,
+                offset: -35,
+            });          
+</script>
+<script src="scripts/main.js"></script>
 </body>
 </html>

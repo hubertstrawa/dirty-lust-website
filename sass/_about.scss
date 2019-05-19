@@ -12,6 +12,11 @@
         width: 53.5%;
         text-align: center;
         margin-top: .1rem;
+
+        @media only screen and (max-width: $bp-small){
+            width: 75%;
+            margin-top: -5rem;
+        }
     }
 
     &__header {
@@ -19,6 +24,7 @@
         font-weight: 700;
         line-height: 3.9rem;
         margin-bottom: 2.7rem;
+
     }
 
     &__text {

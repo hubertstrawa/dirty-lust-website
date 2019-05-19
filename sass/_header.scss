@@ -1,3 +1,8 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+}
+
 .header {
     grid-column: full-start / full-end;
     background: $color-head-foot;
@@ -7,6 +12,12 @@
 
     &__logo {
         grid-column: center-start / col-start 1;
+
+        @media only screen and (max-width: $bp-small){
+            padding-left: 20%;
+            width: 130px
+        }
+
     }
 
     &__nav {
@@ -29,6 +40,12 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        @media only screen and (max-width: $bp-largest){
+            display: none;
+        }
+
+
     }
     
 }
@@ -41,4 +58,157 @@
     &__img {
         width: 100%;
     }
+}
+
+
+
+///// MENU
+
+.menu-wrap {
+    position: fixed;
+    top: 10px;
+    left: 80%;
+    z-index: 1;
+
+    @media only screen and (min-width: $bp-largest){
+        display: none;
+    }
+
+    .toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        // background: $color-head-foot;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > div {
+            position: relative;
+            width: 80%;
+            height: 2px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+
+        & > div:before,
+        & > div:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: -10px;
+            width: 100%;
+            height: 2px;
+            background: inherit;
+        }
+
+        & > div:after {
+            top: 10px;
+        }
+    }
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+
+    &:before,
+    &:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+// SHOW MENU
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+
+    &:target {
+        display: none;
+    }
+
+    & > div {
+        transform: scale(1);
+        transition-duration: $menu-speed;
+
+        & > div {
+            opacity: 1;
+            transition: opacity 0.4s ease;
+        }
+    }
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+        background: rgba($color-head-foot, .9);
+        border-radius: 50%;
+        width: 300vw;
+        height: 300vw;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+
+    & > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        margin-top: -14rem;
+
+        & > ul > li {
+            list-style: none;
+            color: $color-main;
+            font-size: 2rem;
+            padding: 2rem;
+            font-weight: 600;
+
+            & > a {
+                color: inherit;
+                text-decoration: none;
+                transition: color 0.4s ease;
+            }
+        }
+    }
+}
+
+.ham-socials {
+    display: flex;
+    justify-content: space-between;
 }

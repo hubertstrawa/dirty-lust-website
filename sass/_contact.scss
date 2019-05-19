@@ -5,6 +5,7 @@
     align-items: center;
     text-align: center;
 
+
     &__box {
         width: 60%;
         // background-color: red;
@@ -27,6 +28,11 @@
             display: flex;
             justify-content: space-evenly;
             margin-left: 6rem;
+
+            @media only screen and (max-width: $bp-small){
+                flex-direction: column;
+                margin: auto;
+            }
         }
 
         &--map {

@@ -37,17 +37,18 @@
     flex: auto; 
     width: 280px; 
     margin: .5vw; 
+
 }
 
-.gallery__photos > div:nth-child(4),
-.gallery__photos > div:nth-child(8),
-.gallery__photos > div:nth-child(12)  {
-    // padding: 0 0 0 0;
-}
 
 .gallery__photos > div img { 
     width: 100%; 
     height: auto; 
     // margin: 0 3rem 3rem 0;
     padding: .3vw;
+
+    @media only screen and (max-width: $bp-small){
+        width: 90%;
+        margin: 0 8% 0 5%;
+    }
 }

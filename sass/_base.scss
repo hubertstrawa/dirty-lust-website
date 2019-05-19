@@ -4,6 +4,13 @@ $color-head-foot: #1E1E1E;
 $color-main: #B49960;
 $color-main-opacity: rgba(#B49960, 0.05);
 
+$menu-speed: 0.75s;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
 
 // GLOBAL SETTINGS
 
@@ -19,6 +26,10 @@ $color-main-opacity: rgba(#B49960, 0.05);
 html {
     font-size: 62.5%; // 1 rem = 10px
     box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 52%;
+    }
 }
 
 body {
@@ -30,6 +41,10 @@ body {
     display: grid;
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
     grid-template-rows: 9rem 40rem 39rem min-content 54rem 6.4rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-template-rows: 9rem 25rem 39rem min-content 54rem 6.4rem;
+    }
 }
 
 // 108 rem -mincontent
