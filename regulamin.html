@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dirty Lust - studio z wieloletnią tradycją</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+</head>
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="309286092496998"
+logged_in_greeting="Hej, jak możemy Ci pomóc?"
+logged_out_greeting="Hej, jak możemy Ci pomóc?">
+</div>
+
+<main class="container">
+
+    <header class="header">
+            <section class="header__wrapper">
+            <img class="header__logo" src="img/logo.png">
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#o_nas">O nas</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="https://www.instagram.com/dirtylusttattoo/" target="_blank"><img src="img/ig.svg" alt="Instagram icon"></a></li>
+                    <li><a href="https://www.facebook.com/DirtyLustStudio/" target="_blank"><img src="img/fb.svg" alt="Facebook icon"></a></li>
+                </ul>
+            </nav>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#o_nas" class="ham-about">O nas</a></li>
+                                <li><a href="#galeria" class="ham-gallery">Galeria</a></li>
+                                <li><a href="#kontakt" class="ham-contact">Kontakt</a></li>
+                                <li>
+                                    <div class="ham-socials">
+                                        <a href="https://www.instagram.com/dirtylusttattoo/" target="_blank"><img src="img/ig.svg" alt="Instagram icon"></a>
+                                        <a href="https://www.facebook.com/DirtyLustStudio/" target="_blank"><img src="img/fb.svg" alt="Facebook icon"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>   
+    
+    <section class="hero">
+        <div>
+            <img class="hero__img" src="img/heroimg.jpg">
+        </div>
+    </section>
+    
+    <section class="about" id="o_nas">
+        <div>
+            <h1 class="about__header">O Nas</h1>
+            <p class="about__text"><strong>Dirty Lust Tattoo Studio</strong> znajduje się w samym centrum Warszawy. Wykonujemy tatuaże cieniowane i kolorowe. Duże i małe.</p>
+            <p class="about__text" style="margin-top: .55em">Zapraszamy na interpretacje Waszych pomysłów w stylach naszych artystów. <strong>Konsultacja oraz wycena są zawsze darmowe!</strong></p>
+            <p class="about__text" style="margin-top: .55em">Masz pomysł ale nie masz projektu?! Świetnie trafiłeś! Specjalnie dla Ciebie stworzymy oryginalny tatuaż!</p>
+            <p class="about__text" style="margin-top: .55em"><strong>Kolorujemy Was od roku 2012</strong>. Tysiące zadowolonych klientów!</p>
+            <p class="about__text" style="margin-top: 1em"><strong>Czekamy na wiadomość od Ciebie!</strong>.</p>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <img class="footer__logo" src="img/logo.png">
+        <div class="footer__socials">
+            <a href="https://www.instagram.com/dirtylusttattoo/" target="_blank"><img class="footer__socials--ig" src="img/ig.svg"></a>
+            <a href="https://www.facebook.com/DirtyLustStudio/" target="_blank"><img class="footer__socials--fb" src="img/fb.svg"></a>
+        </div>
+    </footer>
+
+</main>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155853532-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155853532-1');
+</script>
+
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+48516499990", // WhatsApp number
+            call_to_action: "Napisz do nas", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
+  
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 850,
+                offset: -30,
+            });   
+
+            var scroll = new SmoothScroll('a[href*="#galeria"]', {
+	            speed: 850,
+                offset: -35,
+            });          
+</script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
