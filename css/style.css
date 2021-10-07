@@ -508,6 +508,9 @@ body {
     flex-direction: column;
     margin: auto;
   }
+  .contact__box--info > div {
+    width: 100%;
+  }
 }
 .contact__box--map {
   margin-top: 4rem;
