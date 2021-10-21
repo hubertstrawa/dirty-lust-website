@@ -139,7 +139,7 @@ $(document).ready(function () {
               <svg class="arrow turned" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.1424 9.07107L9.07129 16.1421L2.00022 9.07107" stroke="#B49960" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
-              ENENJak umówić się na tatuaż?
+              Jak umówić się na tatuaż?
             </h3>
             <div class="box-accordion" style="display: block;">
               <p>
