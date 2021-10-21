@@ -50,8 +50,8 @@ body {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] 1fr [full-end];
-  grid-template-rows: 9rem -webkit-min-content 45rem -webkit-min-content -webkit-min-content -webkit-min-content 6.4rem;
-  grid-template-rows: 9rem min-content 45rem min-content min-content min-content min-content min-content 6.4rem;
+  grid-template-rows: 9rem -webkit-min-content 48rem -webkit-min-content -webkit-min-content -webkit-min-content 6.4rem;
+  grid-template-rows: 9rem min-content 48rem min-content min-content min-content min-content min-content 6.4rem;
 }
 @media only screen and (max-width: 37.5em) {
   .container {
@@ -70,6 +70,9 @@ body {
   --overlay-color: rgba(24, 39, 51, 0.85);
 }
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   grid-column: full-start / full-end;
   background: #1e1e1e;
   grid-column: 1 / -1;
@@ -121,11 +124,17 @@ body {
 .header__nav > ul > li {
   margin-right: 4rem;
   font-weight: 500;
+  transition: transform 0.3s ease-in-out;
+}
+.header__nav > ul > li:hover:not(.languages) {
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in-out;
 }
 .header__nav > ul > li > a {
   color: inherit;
   text-decoration: none;
 }
+
 .header__nav > ul > li > a > img:hover {
   opacity: 0.5;
 }
@@ -133,8 +142,20 @@ body {
   grid-column: full-start / full-end;
   position: relative;
 }
+@keyframes animateHero {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.header__nav {
+  animation: 0.9s animateHero;
+}
 .hero__img {
   width: 100%;
+  animation: 0.7s animateHero;
 }
 @media only screen and (max-width: 50em) {
   .hero__img {
@@ -148,7 +169,7 @@ body {
   right: 7vw;
   z-index: 1;
 }
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 62.5em) {
   .menu-wrap {
     display: none;
   }
@@ -344,6 +365,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   color: rgba(180, 153, 96, 0.99);
+  animation: 2s slideup;
 }
 .about > div {
   width: 53.5%;
@@ -784,4 +806,174 @@ body {
 .kayak-link {
   margin: 3rem 0;
   display: block;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.backdrop {
+  display: none;
+}
+
+.backdrop {
+  animation-duration: 1s;
+  animation-name: slideout;
+}
+
+.backdrop > svg {
+  width: 200px;
+  position: absolute;
+  margin: auto;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backdrop.active {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+  height: 100%;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+.line-break {
+  margin: 0 5px;
+}
+
+.pl-button,
+.en-button {
+  background: none;
+  border: none;
+  color: rgba(180, 153, 96, 0.9);
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: 0.2s ease-in-out;
+}
+
+.pl-button:hover,
+.en-button:hover {
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+}
+
+.no-padding {
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.no-padding .pl-button,
+.no-padding .en-button {
+  padding: 20px;
+}
+
+.no-padding .line-break {
+  font-size: 1.6rem;
+}
+/* 
+@keyframes slideup {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header__nav,
+#o_nas {
+  animation: 1s slideup;
+} */
+
+.ham-about.mobile {
+  display: block;
+  position: relative;
+  top: -250px;
+}
+
+/* #o_nas:before {
+  display: block;
+  content: ' ';
+  margin-top: -285px;
+  height: 285px;
+  visibility: hidden;
+} */
+
+#o_nas_link {
+  margin-top: -140px;
+  padding-bottom: 140px;
+  display: block;
+}
+
+#kontakt_link {
+  margin-top: -140px;
+  padding-bottom: 140px;
+  display: block;
+}
+
+#galeria_link,
+#faq_link {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+#regulamin_link {
+  margin-top: -40px;
+  padding-bottom: 40px;
+  display: block;
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.slideupp {
+  animation: 1s slideup;
+}
+
+.slidedownn {
+  animation: 1s slidedown;
 }
