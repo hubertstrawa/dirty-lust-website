@@ -56,7 +56,7 @@ $(document).ready(function () {
     $('.ham-gallery').text('Galeria');
     $('.ham-regulamin').text('Regulamin');
     $('.ham-faq').text('FAQ');
-    $('.ham-kontakt').text('Kontakt');
+    $('.ham-contact').text('Kontakt');
 
     $('#o_nas').html(`
     <span id="o_nas_link"></span>
@@ -255,7 +255,7 @@ $(document).ready(function () {
     $('.ham-gallery').text('Gallery');
     $('.ham-regulamin').text('Regulations');
     $('.ham-faq').text('FAQ');
-    $('.ham-kontakt').text('Contact us');
+    $('.ham-contact').text('Contact us');
 
     $('#o_nas').html(`
     <span id="o_nas_link"></span>
