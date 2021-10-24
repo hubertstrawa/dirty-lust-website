@@ -58,6 +58,8 @@ $(document).ready(function () {
     $('.ham-faq').text('FAQ');
     $('.ham-contact').text('Kontakt');
 
+    $('.button_more_btn').text('zobacz więcej');
+
     $('#o_nas').html(`
     <span id="o_nas_link"></span>
     <div>
@@ -68,7 +70,7 @@ $(document).ready(function () {
             <p class="about__text"><strong>Konsultacja oraz wycena są zawsze darmowe!</strong></p>
             <p class="about__text" style="margin-top: .85em">Masz pomysł, ale nie masz projektu?! Świetnie trafiłeś! Specjalnie dla Ciebie stworzymy oryginalny tatuaż!</p>
             <p class="about__text" style="margin-top: .85em">Od 2012 roku mamy tysiące zadowolonych klientów!</p>
-            <p class="about__text" style="margin-top: 1em"><strong>Czekamy na wiadomość od Ciebie!</strong>.</p>
+            <p class="about__text" style="margin-top: 1em"><strong>Czekamy na wiadomość od Ciebie!</strong></p>
         </div>
     `);
 
@@ -149,8 +151,7 @@ $(document).ready(function () {
                 <p>Instagram: <a target="_blank" href="https://www.instagram.com/dirtylusttattoo/">www.instagram.com/DirtyLustTattoo/</a></p>
                 <p>E-mail: <a href="mailto:info.dirtylust@gmail.com">info.dirtylust@gmail.com</a></p>
                 <p>Messenger: <a target="_blank" href="https://www.m.me/DirtyLustStudio">www.m.me/DirtyLustStudio</a></p>
-                <p>What’s App: <a href="tel:+48516499990">+48 516 499 990</a></p>
-                
+                <p>WhatsApp: <a href="tel:+48516499990">+48 516 499 990</a></p>
               </p>
             </div>
           </div>
@@ -257,6 +258,8 @@ $(document).ready(function () {
     $('.ham-faq').text('FAQ');
     $('.ham-contact').text('Contact us');
 
+    $('.button_more_btn').text('see more');
+
     $('#o_nas').html(`
     <span id="o_nas_link"></span>
     <div>
@@ -266,7 +269,7 @@ $(document).ready(function () {
             <p class="about__text" style="margin-top: .85em"><strong>The consultation and valuation are always free!</strong></p>
             <p class="about__text" style="margin-top: .85em">Do you have an idea for tattoo but no project? You've come to a great place! We'll create original tattoo just for you.</p>
             <p class="about__text" style="margin-top: .85em">Thousands of satisfied customers since 2012</p>
-            <p class="about__text" style="margin-top: 1em"><strong>We look forward to hearing from you!</strong>.</p>
+            <p class="about__text" style="margin-top: 1em"><strong>We look forward to hearing from you!</strong></p>
         </div>
     `);
 
@@ -373,7 +376,7 @@ $(document).ready(function () {
                 <p>Instagram: <a target="_blank" href="https://www.instagram.com/dirtylusttattoo/">www.instagram.com/DirtyLustTattoo/</a></p>
                 <p>E-mail: <a href="mailto:info.dirtylust@gmail.com">info.dirtylust@gmail.com</a></p>
                 <p>Messenger: <a target="_blank" href="https://www.m.me/DirtyLustStudio">www.m.me/DirtyLustStudio</a></p>
-                <p>What’s App: <a href="tel:+48516499990">+48 516 499 990</a></p>
+                <p>WhatsApp: <a href="tel:+48516499990">+48 516 499 990</a></p>
                 
               </p>
             </div>

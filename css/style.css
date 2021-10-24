@@ -108,10 +108,25 @@ body {
 }
 .header__logo {
   padding: 0.5rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 6%;
+  height: 175px;
 }
 @media only screen and (max-width: 62.5em) {
   .header__nav {
     display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    left: 0;
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .header__logo {
+    left: -20px;
   }
 }
 .header__nav > ul {
@@ -152,6 +167,7 @@ body {
 }
 .header__nav {
   animation: 0.9s animateHero;
+  margin-left: auto;
 }
 .hero__img {
   width: 100%;
